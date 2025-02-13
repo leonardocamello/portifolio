@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="css/jogoa.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+   
+</head>
+
+<style>
+    body{
+        background-image: url("img/fundo.jpg");
+    }
+    
+    </style>
+    
+
+<body>
+    <header>
+        <div class="homeName">
+            <h1 style="color: aliceblue;">Adivinhação</h1>
+        </div>
+
+ 
+    </header>
+
+    <main>
+        <div class="game-container">
+            <p>Tente adivinhar o número entre 1 e 10</p>
+            <input type="number" id="guess" min="1" max="10" placeholder="Digite seu palpite">
+            <button onclick="checkGuess()">Adivinhar</button>
+            <div class="message" id="message"></div>
+            <span class="reset" onclick="resetGame()">Jogar novamente</span>
+        </div>
+    </main>
+
+    <footer class="referencia">
+        <div class="ref">
+            <p>
+                <a href="contato.html" target="_self" rel="next">Contato</a>
+            </p>
+        </div>
+
+        <footer class="referencia">
+            <div class="ref">
+                <p>
+                    <a href="contato.html">Contato</a>
+                    <a href="index.html">Home</a>
+                </p>
+            </div>
+        
+            <p>&copy; 2025 Leonardo Todos os direitos reservados.</p>
+        </footer>
+
+    <script src="js/jogoa.js"> </script>
+</body>
+
+</html>

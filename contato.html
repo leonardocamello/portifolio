@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <style>
+        .main-content {
+            
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+
+        header{
+            width: 30%;
+            padding: 0px 20px;
+
+
+            
+        }
+
+        body{
+            background-image: url("img/fundo.jpg");
+    }
+
+    footer {
+    color: #F5F5F5;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.referencia {
+    text-align: right;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.ref a {
+    text-decoration: none;
+    color: #F5F5F5;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.ref a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+    </style>
+</head>
+<body>
+    <header>
+
+
+    <div class="main-content">
+        <h2 style="color: aliceblue;">Entre em Contato</h2>
+     
+
+        <form action="submit_form.php" method="POST">
+            <label for="name" style="color: aliceblue;">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" style="color: aliceblue;">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message" style="color: aliceblue;">Mensagem:<br></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h3 style="color: aliceblue;" style="color: aliceblue;">Informações de Contato</h3>
+        <p style="color: aliceblue;" style="color: aliceblue;">Email: jlcv@discente.ifpe.edu.br</p>
+        <p style="color: aliceblue;" style="color: aliceblue;">Telefone: (11) 98765-4321</p>
+    </div>
+
+    <footer class="referencia">
+        <div class="ref">
+            <p>
+                <a href="index.html">Home</a>
+            </p>
+        </div>
+    
+        <p>&copy; 2025 Leonardo Todos os direitos reservados.</p>
+    </footer>
+
+ 
+
+</body>
+</html>

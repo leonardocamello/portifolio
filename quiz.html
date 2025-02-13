@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Halloween</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+  
+</head>
+
+<style>
+    body{
+        background-image: url("img/fundo.jpg");
+    }
+    
+    </style>
+    
+<body>
+
+    <!-- Tela Inicial -->
+    <div class="quiz-container start-container" id="start-container">
+        <h1>Quiz Sobre mim</h1>
+        <p>Teste seus conhecimentos sobre mim!</p>
+        <button tabindex="0" onclick="showRules()">Ver Regras</button>
+    </div>
+
+    <!-- Tela de Regras -->
+    <div class="quiz-container rules-container" id="rules-container">
+        <h2>Regras do Quiz</h2>
+        <ul>
+            <li>Você tem 15 segundos para responder cada pergunta.</li>
+            <li>Escolha a alternativa correta clicando nela.</li>
+            <li>Após o tempo ou a resposta, a próxima pergunta será exibida automaticamente.</li>
+            <li>Depois de escolher uma alternativa ela não poderá ser mudada.</li>
+            <li>No final, você verá o seu desempenho.</li>
+        </ul>
+        <button onclick="startQuiz()">Iniciar Quiz</button>
+        <button onclick="closeRules()">Fechar Regras</button>
+    </div>
+
+    <!-- Tela do Quiz -->
+    <div class="quiz-container" id="quiz-container" style="display:none;">
+        <div class="timer" id="timer">15</div>
+        <div class="question-container">
+            <div class="question">Pergunta 1: O que é um Jack-o'-Lantern?</div>
+            <ul class="answers">
+                <li onclick="selectAnswer(this, 0, 'a')">A)  Uma fantasia de abóbora</li>
+                <li onclick="selectAnswer(this, 0, 'b')">B) Uma lanterna feita com abóbora</li>
+                <li onclick="selectAnswer(this, 0, 'c')">C) Um brinquedo tradicional de Halloween</li>
+                <li onclick="selectAnswer(this, 0, 'd')">D) Um tipo de doce de Halloween</li>
+            </ul>
+        </div>
+
+        <button id="nextButton" onclick="nextQuestion()">Próxima</button>
+
+        <!-- Resultado Final -->
+        <div class="result" id="result">
+            <div id="parabens"></div>
+            Você acertou <span id="score"></span> de 10!
+            <br>
+            <button onclick="restartQuiz()">Voltar ao Home</button>
+        </div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

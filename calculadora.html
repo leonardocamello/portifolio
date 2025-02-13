@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+</head>
+
+<style>
+    body{
+        background-image: url("img/fundo.jpg");
+    }
+    
+    </style>
+    
+
+<body>
+    <header>
+        <div class="homeName">
+            <h1 style="color: aliceblue;">Calculadora</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <input type="text" id="display" class="display" disabled />
+            <br />
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <br />
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <br />
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <br />
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </main>
+
+    <footer class="referencia">
+        <div class="ref">
+            <p>
+                <a href="contato.html" target="_self" rel="next">Contato</a>
+            </p>
+        </div>
+        <footer class="referencia">
+            <div class="ref">
+                <p>
+                    <a href="contato.html">Contato</a>
+                    <a href="index.html">Home</a>
+                </p>
+            </div>
+        
+            <p>&copy; 2025 Leonardo Todos os direitos reservados.</p>
+        </footer>
+
+    <script src="js/calculadora.js"> </script>
+</body>
+
+</html>

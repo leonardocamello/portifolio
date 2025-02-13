@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/calcImc.css">
+    <link rel="icon" href="img/fundo.jpg" type="image/x-icon">
+
+</head>
+
+<style>
+    body{
+        background-image: url("img/fundo.jpg");
+    }
+    
+    </style>
+    
+
+<body>
+    <header>
+        <div class="homeName">
+            <h1 style="color: aliceblue;">Calculadora de IMC</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <label for="weight">Peso (kg): </label>
+            <input type="number" id="weight" placeholder="Ex: 70" required><br><br>
+
+            <label for="height">Altura (m): </label>
+            <input type="number" step="0.01" id="height" placeholder="Ex: 1.75" required><br><br>
+
+            <button onclick="calculateIMC()">Calcular IMC</button>
+
+            <div class="result" id="result"></div>
+            <div class="classification" id="classification"></div>
+            <span class="reset" onclick="resetForm()">Resetar</span>
+        </div>
+    </main>
+
+    <footer class="referencia">
+        <div class="ref">
+            <p>
+                <a href="contato.html">Contato</a>
+                <a href="index.html">Home</a>
+            </p>
+        </div>
+    
+        <p>&copy; 2025 Leonardo Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/calcImc.js"> </script>
+</body>
+
+</html>
